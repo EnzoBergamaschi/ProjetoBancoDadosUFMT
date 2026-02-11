@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7f1Bu+8Z3JE=",
+  "dgSpecHash": "o/1UpH+p/fQ=",
   "success": true,
   "projectFilePath": "C:\\Projetos\\BancoDadosUFMT\\SimpleCrudSystem\\SimpleCrud.Api\\SimpleCrud.Api.csproj",
   "expectedPackageFiles": [
@@ -25,10 +25,7 @@
     "C:\\Users\\sowbo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\sowbo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\sowbo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\sowbo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "C:\\Users\\sowbo\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\8.0.23\\microsoft.netcore.app.runtime.linux-x64.8.0.23.nupkg.sha512",
-    "C:\\Users\\sowbo\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.23\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.23.nupkg.sha512",
-    "C:\\Users\\sowbo\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\8.0.23\\microsoft.netcore.app.host.linux-x64.8.0.23.nupkg.sha512"
+    "C:\\Users\\sowbo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
   "logs": []
 }
