@@ -1,0 +1,12 @@
+# Docker
+mysql_data/
+
+# Node.js
+node_modules/
+
+# .NET / C#
+bin/
+obj/
+
+# Environment Variables
+.env
