@@ -1,0 +1,44 @@
+services:
+  mysql:
+    image: mysql:8.0.31
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: simplecrud
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./init_tables.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - simplecrud-net
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=server=mysql;user=root;password=root;database=simplecrud
+    depends_on:
+      - mysql
+    networks:
+      - simplecrud-net
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    depends_on:
+      - api
+    networks:
+      - simplecrud-net
+
+networks:
+  simplecrud-net:
+    driver: bridge

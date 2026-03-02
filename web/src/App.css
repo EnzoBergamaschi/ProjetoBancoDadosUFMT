@@ -1,0 +1,298 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.tab-menu button {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.tab-menu button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.crud-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.crud-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.crud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  max-width: none;
+  margin: 0;
+}
+
+.search-form input {
+  width: 150px;
+  height: 38px;
+  padding: 0 10px;
+}
+
+.btn-search {
+  background-color: #17a2b8;
+}
+
+.btn-clear {
+  background-color: #6c757d;
+}
+
+.btn-add {
+  background-color: #28a745;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #212529 !important;
+  margin-right: 5px;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: slideDown 0.3s ease;
+  color: #212529; /* Force dark text color */
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #212529;
+}
+
+.form-group label {
+  color: #495057;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.modal-content input {
+  background-color: #fff;
+  color: #212529;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.modal-content input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-save { background-color: #007bff; }
+.btn-cancel { background-color: #6c757d; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Report Modal Specific Styles */
+.report-modal {
+  max-width: 800px;
+  width: 95%;
+}
+
+.report-modal pre {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  overflow-x: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.btn-report {
+  background-color: #6f42c1;
+}
+
+.btn-report:hover {
+  background-color: #59339d;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
